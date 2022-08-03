@@ -1,0 +1,4 @@
+﻿  소스.cpp
+c:\users\multicampus\documents\github\saf_al\220803_al_8\220803_al_8\소스.cpp(32): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\multicampus\documents\github\saf_al\220803_al_8\220803_al_8\소스.cpp(37): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  220803_AL_8.vcxproj -> C:\Users\multicampus\Documents\Github\SAF_AL\220803_AL_8\Debug\220803_AL_8.exe
