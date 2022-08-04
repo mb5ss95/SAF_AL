@@ -1,0 +1,3 @@
+﻿  소스.cpp
+c:\users\moon\documents\github\saf_al\220804_al_9\220804_al_9\소스.cpp(62): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  220804_AL_9.vcxproj -> C:\Users\moon\Documents\Github\SAF_AL\220804_AL_9\Debug\220804_AL_9.exe
