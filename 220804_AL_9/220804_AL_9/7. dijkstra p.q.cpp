@@ -40,7 +40,8 @@ bool operator<(Edge A, Edge B)
 }
 
 int main()
-{
+{	
+	freopen_s(new FILE*, "sample.txt", "r", stdin);
 	int cntNode, cntEdge;
 	cin >> cntNode >> cntEdge;
 	vector<Edge> v[10];// 인접 리스트 : cost (now->next로 가는 거리)
@@ -65,8 +66,8 @@ int main()
 		dist[i] = 2134567890; // dist를 큰값으로 '갈 수 없다'의 형태로 초기화
 
 	// 3. 시작점 세팅
-	dist[1] = 0; // 시작점 세팅
-	pq.push({ 1, 0 }); // 1이라는 시작점은 0의 거리로 갈 수 있다.
+	dist[3] = 0; // 시작점 세팅
+	pq.push({ 3, 0 }); // 1이라는 시작점은 0의 거리로 갈 수 있다.
 
 	// 7. 4~6단계 반복
 	// cntNode-1번 꺼내서 처리하면 X <- 같은점을 또 꺼낼 수 있어서
@@ -96,6 +97,9 @@ int main()
 			dist[next] = dist[now] + edgeDist;
 			pq.push({ next, dist[next] });
 		}
+	}
+	for (int i = 0; i < 10; i++) {
+		cout << dist[i] << " ";
 	}
 	int de = 1;
 	return 0;
