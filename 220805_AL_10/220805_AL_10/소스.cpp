@@ -6,51 +6,53 @@
 
 using namespace std;
 
-struct info {
+struct node {
 	int y, x;
-	int num;
 };
-
-
-
 
 int main() {
 	freopen_s(new FILE*, "sample.txt", "r", stdin);
 	ios::sync_with_stdio(false);
-
-
-	int num;
-	cin >> num;
-	vector<vector<info>> v(num + 1, vector<info>(num + 1));
+	cin.tie(0);
+	cout.tie(0);
 	
-	for (int i = 0; i < num; i++) {
-		for (int j = 0; j < num; j++) {
-			int temp;
-			cin >> temp;
-			v[i][j] = { i,j,temp };
+	vector<vector<node>> v(4, vector<node>(3));
+	char arr[4][3];
+	int sy, sx;
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 3; j++) {
+			cin >> arr[i][j];
+			v[i][j] = { i, j };
+			if (arr[i][j] == 'A') {
+				sy = i;
+				sx = j;
+			}
 		}
 	}
 
-	int dy[] = { 0, -1, 0, 1, 0 };
-	int dx[] = { 0, 0, 1, 0, -1 };
+	queue<node> q;
+	q.push({ sy, sx });
+
+	int dy[] = { -1,-1,-1, 0, 0, 1, 1, 1 };
+	int dx[] = { -1, 0, 1, 1, 1, 0,-1,-1 };
 	int cnt = 0;
-	int HP = 0;
-	for (int i = 0; i < v.size(); i++) {
-		for (int j = 0; j < v[i].size(); j++) {
-			if (v[i][j].num == -1) {
-				cnt++;
-				continue;
-			}
-			for (int k = 0; k < 5; k++) {
-				int ny = v[i][j].y + dy[k];
-				int nx = v[i][j].x + dx[k];
+	while (!q.empty()) {
+		node now = q.front();
+		q.pop();
 
-				if (ny < 0 || nx < 0 || nx >= num || ny >= num) continue;
-				if (v[ny][nx].num == -1) continue;
-				HP++;
-				v[ny][nx].num = -1;
+		for (int i = 0; i < 8; i++) {
+			int ny = now.y + dy[i];
+			int nx = now.x + dx[i];
+
+			if (ny < 0 || nx < 0 || ny >= 4 || nx >= 3) continue;
+			if (arr[ny][nx] == '0') continue;
+			if (arr[ny][nx] == 'B') {
+				cout << cnt;
+				return 0;
 			}
+			q.push({ ny, nx });
+			arr[ny][nx] = '0';
 		}
 	}
-	cout << HP << "n" << cnt;;
+	
 };
