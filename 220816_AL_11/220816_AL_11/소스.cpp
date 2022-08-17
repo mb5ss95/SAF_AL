@@ -44,7 +44,6 @@ int main() {
 			sum = sum + datas[e];
 			e++;
 		}
-
 	}
 	cout << cnt;
 }
