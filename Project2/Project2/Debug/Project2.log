@@ -1,0 +1,3 @@
+﻿  소스.cpp
+c:\users\multicampus\documents\github\saf_al\project2\project2\소스.cpp(87): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
+  Project2.vcxproj -> C:\Users\multicampus\Documents\Github\SAF_AL\Project2\Debug\Project2.exe

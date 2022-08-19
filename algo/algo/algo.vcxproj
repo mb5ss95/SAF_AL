@@ -131,6 +131,7 @@
     </ClCompile>
     <ClCompile Include="2. algo.cpp" />
     <ClCompile Include="2. answer DFS.cpp" />
+    <ClCompile Include="dj-1 등산.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="sample.txt" />
