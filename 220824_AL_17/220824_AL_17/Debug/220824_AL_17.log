@@ -1,0 +1,12 @@
+﻿  소스2.cpp
+c:\users\multicampus\documents\github\saf_al\220824_al_17\220824_al_17\소스2.cpp(26): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\multicampus\documents\github\saf_al\220824_al_17\220824_al_17\소스2.cpp(28): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\multicampus\documents\github\saf_al\220824_al_17\220824_al_17\소스2.cpp(81): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\multicampus\documents\github\saf_al\220824_al_17\220824_al_17\소스2.cpp(93): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\multicampus\documents\github\saf_al\220824_al_17\220824_al_17\소스2.cpp(111): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\multicampus\documents\github\saf_al\220824_al_17\220824_al_17\소스2.cpp(124): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\multicampus\documents\github\saf_al\220824_al_17\220824_al_17\소스2.cpp(125): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\multicampus\documents\github\saf_al\220824_al_17\220824_al_17\소스2.cpp(144): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\multicampus\documents\github\saf_al\220824_al_17\220824_al_17\소스2.cpp(145): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\multicampus\documents\github\saf_al\220824_al_17\220824_al_17\소스2.cpp(176): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+LINK : fatal error LNK1168: C:\Users\multicampus\Documents\Github\SAF_AL\220824_AL_17\Debug\220824_AL_17.exe을(를) 쓰기용으로 열 수 없습니다.

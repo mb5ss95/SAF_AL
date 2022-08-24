@@ -1,0 +1,13 @@
+hash
+- 자바에서 hash-map이라고 부름
+- 우린 hash 쓸거임
+
+map
+- c++에서 부르는 이름
+
+
+dictionary
+- key와 value로 구성
+- hash로 구현 가능
+- bst로 구현 가능(binary search tree)
+
