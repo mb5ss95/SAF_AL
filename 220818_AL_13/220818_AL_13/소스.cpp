@@ -10,11 +10,14 @@ int num;
 int maxi = -2147483647;
 
 void run(int th, int sum) {
+	if (memo[th] != 0) {
+		if (memo[th] > sum) return;
+	}
 	if (th > num) {
 		if (sum > maxi) maxi = sum;
 		return;
 	}
-
+	memo[th] = sum;
 	sum = sum + map[th];
 	run(th + 2, sum);
 	run(th + 7, sum);

@@ -35,6 +35,9 @@
     <ClCompile Include="dj-1 등산.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="3. backtracking.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="2. answer 노가다.cpp">
